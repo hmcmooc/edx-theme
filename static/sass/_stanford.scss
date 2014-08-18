@@ -1,13 +1,73 @@
 /****************************************************************************************************
-*   Stanford Theming File
+*   MuddX Theming File
+*   Adapted from Stanford Theming File
 *
-*   Contains all the theme color definitions for the Stanford Open Source MOOC Project
+*   Contains all the theme color definitions for the HMC's MuddX Platform
 *
 ****************************************************************************************************/
 
 //-----------------
-//  Color variables (from Stanford palette unless noted)
+//  Color variables (from Harvey Mudd palette unless noted)
 //-----------------
+
+// Primary colors: Gold and Black
+$hmcgold: #EAAA00;
+$hmcgold-80: lighten($hmcgold, 20%);
+$hmcgold-60: lighten($hmcgold, 40%);
+$hmcgold-40: lighten($hmcgold, 60%);
+$hmcgold-20: lighten($hmcgold, 80%);
+$hmcgold-10: lighten($hmcgold, 90%);
+
+$hmcblack: #000000;
+
+// Darker Blue
+$hmcblue: #007FA3;
+$hmcblue-80: lighten($hmcblue, 20%);
+$hmcblue-60: lighten($hmcblue, 40%);
+$hmcblue-40: lighten($hmcblue, 60%);
+
+// Light Green
+$hmcgreen: #B7BF10;
+$hmcgreen-80: lighten($hmcgreen, 20%);
+$hmcgreen-60: lighten($hmcgreen, 40%);
+$hmcgreen-40: lighten($hmcgreen, 60%);
+
+// Yellow
+$hmcyellow: #FFD100;
+$hmcyellow-80: lighten($hmcyellow, 20%);
+$hmcyellow-60: lighten($hmcyellow, 40%);
+$hmcyellow-40: lighten($hmcyellow, 60%);
+$hmcyellow-20: lighten($hmcyellow, 80%);
+
+// Lighter Blue or Cyan
+$hmccyan: #00C1D5;
+$hmccyan-80: lighten($hmccyan, 20%);
+$hmccyan-60: lighten($hmccyan, 40%);
+$hmccyan-40: lighten($hmccyan, 60%);
+
+// Red
+$hmcred: #A6192E;
+$hmcred-80: lighten($hmcred, 20%);
+$hmcred-60: lighten($hmcred, 40%);
+$hmcred-40: lighten($hmcred, 60%);
+
+// Brown
+$hmcbrown: #603D20;
+$hmcbrown-80: lighten($hmcbrown, 20%);
+$hmcbrown-60: lighten($hmcbrown, 40%);
+$hmcbrown-40: lighten($hmcbrown, 60%);
+
+// Orange
+$hmcorange: #E57200;
+$hmcorange-80: lighten($hmcorange, 20%);
+$hmcorange-60: lighten($hmcorange, 40%);
+$hmcorange-40: lighten($hmcorange, 60%);
+
+// Gray
+$hmcgray: #5B6770;
+$hmcgray-80: lighten($hmcgray, 20%);
+$hmcgray-60: lighten($hmcgray, 40%);
+$hmcgray-40: lighten($hmcgray, 60%);
 
 //Cardinal Color Variables
 $cardinal-red: #8C1515;
@@ -26,16 +86,13 @@ $sandstone-50: lighten($sandstone, 9%);
 $sandstone-25: lighten($sandstone, 20%); //Important Heading BG Color 
 
 //Gray Color Variables
-$gray: #3f3c30; //Main Text Color
+$gray: #303c3f; //Main Text Color
 $gray-75: lighten($gray, 18.25%); //Lighter Text Color
 
-$gray-3: #e9e6df; //Block/Course BG Color
-$gray-2: #f2f1eb;
-$gray-1: #fbfbf9; //Main BG Color
-$white: $gray-1;
+$gray-3: #dfe6e9; //Block/Course BG Color
+$gray-2: #ebf1f2;
+$gray-1: #f9fbfb; //Main BG Color
 
-$black: #2e2d29;
-$black-80: #585754;
 
 
 
@@ -58,112 +115,59 @@ $serif: $theme-serif-font, $serif;
 //-----------------
 
 $body-bg: $gray-1;
-$container-bg: $gray-1;
-$login-register-bg: $gray-1;
 $content-wrapper-bg: $gray-1;
 $header-image: none;
-$header-bg: transparentize(lighten($sandstone, 18.5%), .25);
+// $header-bg: transparentize(hmcgold-20, .25);
+$header-bg: $hmcblack;
 $courseware-header-image: none;
-$courseware-header-bg: transparentize(lighten($sandstone, 18.5%), .25);
-$footer-bg: $sandstone-25;
-$courseware-footer-border: 1px solid $beige-60;
+//$courseware-header-bg: transparentize(hmcgold-20, .25);
+$courseware-header-bg: $hmcblack;
+$footer-bg: transparentize(hmcgreen, .5);
+$courseware-footer-border: 1px solid $hmcblue-80;
 $courseware-footer-shadow: box-shadow(2px 1px 0 rgba(0, 0, 0, .1));
 $courseware-footer-margin: 50px;
 
-$faded-hr-image-1: linear-gradient($beige-60 0%, $beige-60);
-$faded-hr-image-2: linear-gradient($beige-60 0%, $beige-60);
-$faded-hr-image-3: linear-gradient($beige-60 0%, $beige-60);
-$faded-hr-image-4: linear-gradient($beige-60 0%, $beige-60);
-$faded-hr-image-5: linear-gradient($beige-60 0%, $beige-60);
-$faded-hr-image-6: linear-gradient($beige-60 0%, $beige-60);
+//$faded-hr-image-1: linear-gradient($beige-60 0%, $beige-60);
+$faded-hr-image-1: linear-gradient($hmcgreen-80 0%, $hmcgreen-80);
+$faded-hr-image-2: linear-gradient($hmcgreen-80 0%, $hmcgreen-80);
+$faded-hr-image-3: linear-gradient($hmcgreen-80 0%, $hmcgreen-80);
+$faded-hr-image-4: linear-gradient($hmcgreen-80 0%, $hmcgreen-80);
+$faded-hr-image-5: linear-gradient($hmcgreen-80 0%, $hmcgreen-80);
+$faded-hr-image-6: linear-gradient($hmcgreen-80 0%, $hmcgreen-80);
 
-$base-font-color: $black;
-$lighter-base-font-color: $black-80;
+$base-font-color: $gray;
+$lighter-base-font-color: $gray-75;
 $very-light-text: $gray-1;
 
-$link-color: $dark-red;
-$link-color-d1: $dark-red;
-$link-hover: $cardinal-light;
-$site-status-color: $cardinal-bg;
+$link-color: $hmcblue;
+$link-hover: $hmcblue-80;
+$selection-color-1: $hmcblue-40;
+$selection-color-2: $hmcblue-40;
+$site-status-color: $hmcblue-40;
 
-$header-graphic-super-color: $dark-red;
-$header-graphic-sub-color: $lighter-base-font-color;
-
-$header-link-color: $dark-red;
-$header-link-hover: $cardinal-light;
-
-$button-color: $cardinal-red;
+$button-color: $hmcblue;
 $button-archive-color: $gray-3;
 
 $shadow-color: $gray;
 
-// actions
 $button-bg-image: none;
 $button-bg-color: $gray-3;
 $button-bg-hover-color: $gray-1;
 
-// actions - primary
-$action-primary-bg: $cardinal-red;
-$action-primary-fg: $gray-2;
-$action-primary-shadow: none;
-
-// focused - hover/active pseudo states
-$action-primary-focused-bg: $dark-red;
-$action-primary-focused-fg: $gray-1;
-
-// current or active navigation item
-$action-primary-active-bg: $dark-red;
-$action-primary-active-fg: $gray-1;
-$action-primary-active-shadow: none;
-$action-primary-active-focused-fg: $gray-2;
-$action-primary-active-focused-shadow: none;
-
-// disabled
-$action-primary-disabled-bg: $gray-75;
-$action-prmary-disabled-fg: $gray-1;
-
-
-
-// actions - secondary
-$action-secondary-bg: $sandstone;
-$action-secondary-fg: $gray;
-$action-secondary-shadow: none;
-
-// focused - hover/active pseudo states
-$action-secondary-focused-bg: $sandstone-50;
-$action-secondary-focused-fg: $gray;
-
-// current or active navigation item
-$action-secondary-active-bg: $sandstone-50;
-$action-secondary-active-fg: $gray;
-$action-secondary-active-shadow: none;
-$action-secondary-active-focused-fg: $gray-75;
-$action-secondary-active-focused-shadow: none;
-
-// disabled
-$action-secondary-disabled-bg: $gray-3;
-$action-secondary-disabled-fg: $gray;
-
-//
-
-$border-color-1: $beige-60;
-$border-color-2: $beige-60;
-$border-color-3: $beige-60;
-$outer-border-color: $beige-60;
+$border-color-1: transparentize(hmcgreen, .5);
+$border-color-2: transparentize(hmcgreen, .5);
+$border-color-3: transparentize(hmcgreen, .5);
+$outer-border-color: transparentize(hmcgreen, .5);
 
 $sidebar-color: $gray-1;
 
-$homepage__header--gradient__color--alpha: $sandstone-25;
-$homepage__header--gradient__color--bravo: $sandstone-25;
-$homepage__header--background: $sandstone-25;
 $dashboard-profile-header-image: none;
-$dashboard-profile-header-color: $sandstone-25;
+$dashboard-profile-header-color: $hmcgold-40;
 $dashboard-profile-color: $gray-3;
-$dot-color: $beige-60;
+$dot-color: transparentize(hmcgreen, .5);
 
 $course-bg-color: $gray-3;
 $course-bg-image: none;
-$account-content-wrapper-bg: $gray-1;
 
 $course-profile-bg: $gray-1;
 $course-header-bg: transparentize($gray-1, .1);
@@ -176,33 +180,9 @@ $sidebar-active-image: $gray-3;
 $form-bg-color: $gray-1;
 $modal-bg-color: $gray-1;
 
-//TOP HEADER IMAGE MARGIN
-$header_image_margin: -77px;
-
-//FOOTER MARGIN
-$footer_margin: ($baseline/4) 0;
-
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/stanford/images/stanford-pano.jpg');
-
-$login-banner-image: none;
-$register-banner-image: none;
+$homepage-bg-image: '../themes/stanford/images/stanford-pano.jpg';
 
 $video-thumb-url: '../themes/stanford/images/stanford-video-thumb.png';
-
-//-----------------
-//  Mixin Styles
-//-----------------
-@mixin login_register_h1_style {
-    clip: auto !important;
-    height: 50px;
-    width: 550px;
-    margin-top: 50px;
-}
-
-@mixin footer_references_style {
-    margin: 0 !important;
-    text-align: right;
-}
