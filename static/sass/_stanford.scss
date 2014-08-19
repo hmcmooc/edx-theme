@@ -122,7 +122,7 @@ $header-bg: $hmcblack;
 $courseware-header-image: none;
 //$courseware-header-bg: transparentize(hmcgold-20, .25);
 $courseware-header-bg: $hmcblack;
-$footer-bg: transparentize($hmcgreen, .5);
+$footer-bg: transparentize($hmcgold, .5);
 $courseware-footer-border: 1px solid $hmcblue-80;
 $courseware-footer-shadow: box-shadow(2px 1px 0 rgba(0, 0, 0, .1));
 $courseware-footer-margin: 50px;
@@ -139,8 +139,8 @@ $base-font-color: $gray;
 $lighter-base-font-color: $gray-75;
 $very-light-text: $gray-1;
 
-$link-color: $hmcblue;
-$link-hover: $hmcblue-80;
+$link-color: $hmcblue-80;
+$link-hover: $hmcblue-60;
 $selection-color-1: $hmcblue-40;
 $selection-color-2: $hmcblue-40;
 $site-status-color: $hmcblue-40;
@@ -154,10 +154,10 @@ $button-bg-image: none;
 $button-bg-color: $gray-3;
 $button-bg-hover-color: $gray-1;
 
-$border-color-1: transparentize($hmcgreen, .5);
-$border-color-2: transparentize($hmcgreen, .5);
-$border-color-3: transparentize($hmcgreen, .5);
-$outer-border-color: transparentize($hmcgreen, .5);
+$border-color-1: transparentize($gray-75, .5);
+$border-color-2: transparentize($gray-75, .5);
+$border-color-3: transparentize($gray-75, .5);
+$outer-border-color: transparentize($gray-75, .5);
 
 $sidebar-color: $gray-1;
 
